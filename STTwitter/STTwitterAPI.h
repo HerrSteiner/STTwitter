@@ -1455,7 +1455,7 @@ authenticateInsteadOfAuthorize:(BOOL)authenticateInsteadOfAuthorize // use NO if
                                                             screenName:(NSString *)screenName
                                                        ownerScreenName:(NSString *)ownerScreenName
                                                                ownerID:(NSString *)ownerID
-                                                          successBlock:(void(^)())successBlock
+                                                          successBlock:(void(^)(void))successBlock
                                                             errorBlock:(void(^)(NSError *error))errorBlock;
 
 /*
