@@ -46,7 +46,7 @@
     return nil;
 }
 
-- (void)invalidateBearerTokenWithSuccessBlock:(void(^)())successBlock
+- (void)invalidateBearerTokenWithSuccessBlock:(void(^)(id nullable))successBlock
                                    errorBlock:(void(^)(NSError *error))errorBlock {
     
     if(_bearerToken == nil) {

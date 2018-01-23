@@ -295,7 +295,7 @@ authenticateInsteadOfAuthorize:authenticateInsteadOfAuthorize
     } errorBlock:errorBlock];
 }
 
-- (void)invalidateBearerTokenWithSuccessBlock:(void(^)())successBlock
+- (void)invalidateBearerTokenWithSuccessBlock:(void(^)(id nullable))successBlock
                                    errorBlock:(void(^)(NSError *error))errorBlock {
     
     if([self.oauth respondsToSelector:@selector(invalidateBearerTokenWithSuccessBlock:errorBlock:)]) {

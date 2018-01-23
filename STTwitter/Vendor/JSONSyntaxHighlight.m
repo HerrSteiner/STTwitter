@@ -93,7 +93,7 @@
          // I hate this: this changes `"key" : ` to `"key"`
          NSString *key = [s substringToIndex:s.length - 3];
          [line appendAttributedString:[[NSAttributedString alloc] initWithString:key attributes:self.keyAttributes]];
-         NSString *colon = prettyPrint ? @" : " : @":";
+         NSString *colon = prettyPrint ? NSLocalizedString(@" : ",nil) : NSLocalizedString(@":",nil); // localization not really needed
          [line appendAttributedString:[[NSAttributedString alloc] initWithString:colon attributes:@{}]];
      }
                                valueBlock:
